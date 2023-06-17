@@ -7,7 +7,7 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: {
-    title: '@umijs/max',
+    title: 'TodoMVC',
   },
   routes: [
     {
@@ -20,16 +20,35 @@ export default defineConfig({
       component: './Home',
     },
     {
-      name: '权限演示',
-      path: '/access',
-      component: './Access',
+      name: 'TodoRedux',
+      path: '/todo-redux',
+      component: './TodoRedux',
     },
     {
-      name: ' CRUD 示例',
-      path: '/table',
-      component: './Table',
+      name: 'TodoContext',
+      path: '/todo-context',
+      component: './TodoHooks/TodoContext',
+    },
+    {
+      name: 'TodoReducer',
+      path: '/todo-reducer',
+      component: './TodoHooks/TodoReducer',
+    },
+    {
+      name: 'TodoMobx',
+      path: '/todo-mobx',
+      component: './TodoMobx',
+    },
+    {
+      name: 'TodoValtio',
+      path: '/todo-valtio',
+      component: './TodoValtio',
+    },
+    {
+      name: 'TodoZustand',
+      path: '/todo-zustand',
+      component: './TodoZustand',
     },
   ],
   npmClient: 'pnpm',
 });
-
